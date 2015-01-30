@@ -15,8 +15,7 @@ if( dopt('d_sideroll_b') ){
 if( is_singular() ){ 
     if( comments_open() ) $commenton = 1;
 }
-?><script type="text/javascript">jQuery("#w-loading div").animate({width:"30%"});</script>
-
+?>
 <script>
 window._deel = {name: '<?php bloginfo('name') ?>',url: '<?php echo get_bloginfo("template_url") ?>', ajaxpager: '<?php echo dopt('d_ajaxpager_b') ?>', commenton: <?php echo $commenton ?>, roll: [<?php echo $sr_1 ?>,<?php echo $sr_2 ?>]}
 </script>
@@ -29,21 +28,10 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 
 <header id="header" class="header" style="position:fixed">
 <div id="w-loading"><div></div></div>
-<!--<div class="container-inner">
-<div class="yusi-logo">
-	<a href="/">
-	    <h1>
-		    <span class="yusi-mono"><?php bloginfo('name'); ?></span>
-            <span class="yusi-bloger"><?php bloginfo('description'); ?></span>
-        </h1>
-    </a>
-</div>
-</div>-->
-
 	<div id="nav-header" class="navbar">
 		<ul class="nav">
 			<li class="yusi-mono">
-				<a href="">
+				<a href="<?php echo site_url();?>">
 					<?php bloginfo('name');?>
 				</a>
 			</li>
