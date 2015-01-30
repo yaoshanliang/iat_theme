@@ -29,28 +29,30 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 
 <header id="header" class="header" style="position:fixed">
 <div id="w-loading"><div></div></div>
-<div class="container-inner">
- <div class="yusi-logo">
-                    <a href="/">
-                        <h1>
-                                                        <span class="yusi-mono"><?php bloginfo('name'); ?></span>
-                                                        <span class="yusi-bloger"><?php bloginfo('description'); ?></span>
-                                                    </h1>
-                    </a>
-    </div>
+<!--<div class="container-inner">
+<div class="yusi-logo">
+	<a href="/">
+	    <h1>
+		    <span class="yusi-mono"><?php bloginfo('name'); ?></span>
+            <span class="yusi-bloger"><?php bloginfo('description'); ?></span>
+        </h1>
+    </a>
 </div>
+</div>-->
 
 	<div id="nav-header" class="navbar">
-		
 		<ul class="nav">
+			<li class="yusi-mono">
+			<?php bloginfo('name');?>
+			</li>
 			<?php echo str_replace("</ul></div>", "", ereg_replace("<div[^>]*><ul[^>]*>", "", wp_nav_menu(array('theme_location' => 'nav', 'echo' => false)) )); ?>
-<li style="float:right;">
-                    <div class="toggle-search"><i class="fa fa-search"></i></div>
+			<li style="float:right;">
+				<div class="toggle-search"><i class="fa fa-search"></i></div>
 <div class="search-expand" style="display: none;"><div class="search-expand-inner"><form method="get" class="searchform themeform" onsubmit="location.href='<?php echo home_url('/search/'); ?>' + encodeURIComponent(this.s.value).replace(/%20/g, '+'); return false;" action="/"><div> <input type="ext" class="search" name="s" onblur="if(this.value=='')this.value='search...';" onfocus="if(this.value=='search...')this.value='';" value="search..."></div></form></div></div>
-</li>
+			</li>
 		</ul>
 	</div>
-	</div>
+</div>
 </header>
 <section class="container"><div class="speedbar">
 		<?php 
