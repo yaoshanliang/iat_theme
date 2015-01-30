@@ -16,7 +16,6 @@ if( is_singular() ){
     if( comments_open() ) $commenton = 1;
 }
 ?><script type="text/javascript">jQuery("#w-loading div").animate({width:"30%"});</script>
-<div id="w-loading"><div></div></div>
 
 <script>
 window._deel = {name: '<?php bloginfo('name') ?>',url: '<?php echo get_bloginfo("template_url") ?>', ajaxpager: '<?php echo dopt('d_ajaxpager_b') ?>', commenton: <?php echo $commenton ?>, roll: [<?php echo $sr_1 ?>,<?php echo $sr_2 ?>]}
@@ -28,7 +27,8 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 </head>
 <body <?php body_class(); ?>>
 
-<header id="header" class="header">
+<header id="header" class="header" style="position:fixed">
+<div id="w-loading"><div></div></div>
 <div class="container-inner">
  <div class="yusi-logo">
                     <a href="/">
