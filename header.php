@@ -43,7 +43,9 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 	<div id="nav-header" class="navbar">
 		<ul class="nav">
 			<li class="yusi-mono">
-			<?php bloginfo('name');?>
+				<a href="">
+					<?php bloginfo('name');?>
+				</a>
 			</li>
 			<?php echo str_replace("</ul></div>", "", ereg_replace("<div[^>]*><ul[^>]*>", "", wp_nav_menu(array('theme_location' => 'nav', 'echo' => false)) )); ?>
 			<li style="float:right;">
