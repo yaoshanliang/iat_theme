@@ -25,8 +25,7 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 <!--[if lt IE 9]><script src="<?php bloginfo('template_url'); ?>/js/html5.js"></script><![endif]-->
 </head>
 <body <?php body_class(); ?>>
-
-<header id="header" class="header" style="position:fixed">
+<header id="header" class="header" >
 <div id="w-loading"><div></div></div>
 	<div id="nav-header" class="navbar">
 		<ul class="nav">
@@ -44,7 +43,7 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 	</div>
 </div>
 </header>
-<section class="container"><div class="speedbar">
+<section class="container"><!--<div class="speedbar">
 		<?php 
 		if( dopt('d_sign_b') ){ 
 			global $current_user; 
@@ -57,5 +56,5 @@ if( dopt('d_headcode_b') ) echo dopt('d_headcode'); ?>
 			</div>
 		<?php } ?>
 		<div class="toptip"><strong class="text-success"><i class="fa fa-volume-up"></i> </strong> <?php echo dopt('d_tui'); ?></div>
-	</div>
+	</div>-->
 	<?php if( dopt('d_adsite_01_b') ) echo '<div class="banner banner-site">'.dopt('d_adsite_01').'</div>'; ?>
