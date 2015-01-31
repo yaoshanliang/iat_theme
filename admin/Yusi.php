@@ -28,7 +28,6 @@ function mytheme_admin() {
 <div class="wrap d_wrap">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/admin/admin.css"/>
     <h2><?php echo $themename; ?>设置
-        <span class="d_themedesc">发布来源：<a href="http://www.yusi123.com/" target="_blank">欲思博客</a> &nbsp;&nbsp; <a href="http://yusi123.com/3233.html" target="_blank">访问<?php echo $themename; ?>主页</a></span>
     </h2>
 
 <form method="post" class="d_formwrap">
