@@ -35,7 +35,7 @@ if($diff<12){echo '<img src="'.get_bloginfo("template_url").'/img/new.gif" alt="
 		<span class="note"> <?php echo deel_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 140, '...'); ?></span>
 <p class="auth-span">
 <?php if( !is_author() && !$_author ){ ?>
-		<span class="muted"><i class="fa fa-user"></i> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ) ?>"><?php echo get_the_author() ?></a></span>
+		<!--<span class="muted"><i class="fa fa-user"></i> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ) ?>"><?php echo get_the_author() ?></a></span>-->
 	<?php } ?>
 	<?php if( !$_time ){ ?><span class="muted"><i class="fa fa-clock-o"></i> <?php echo timeago( get_gmt_from_date(get_the_time('Y-m-d G:i:s')) ) ?></span><?php } ?>
 	<?php if( !$_views ){ ?><span class="muted"><i class="fa fa-eye"></i> <?php deel_views('℃'); ?></span><?php } ?>
